@@ -20,16 +20,16 @@ defmodule Puid.Mixfile do
 
   defp deps do
     [
-      {:dialyxir, "~> 1.0", only: :dev, runtime: false},
+      {:dialyxir, "~> 1.4", only: :dev, runtime: false},
       {:earmark, "~> 1.4", only: :dev},
-      {:ex_doc, "~> 0.28", only: :dev},
+      {:ex_doc, "~> 0.34", only: :dev},
       {:entropy_string, "~> 1.3", only: :test},
       {:misc_random, "~> 0.2", only: :test},
-      {:nanoid, "~> 2.0", only: :test},
+      {:nanoid, "~> 2.1", only: :test},
       {:randomizer, "~> 1.1", only: :test},
-      {:secure_random, "~> 0.5", only: :test},
+      {:secure_random_ex, "~> 0.6", only: :test},
       {:ulid, "~> 0.2", only: :test},
-      {:uuid, "~> 1.1", only: :test}
+      {:uniq, "~> 0.1", only: :test}
     ]
   end
 
