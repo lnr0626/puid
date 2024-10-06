@@ -24,7 +24,7 @@ defmodule Puid.Mixfile do
       {:earmark, "~> 1.4", only: :dev},
       {:ex_doc, "~> 0.34", only: :dev},
       {:entropy_string, "~> 1.3", only: :test},
-      {:misc_random, "~> 0.2", only: :test},
+      {:misc_random, github: "lnr0626/misc_random", branch: "master", only: :test},
       {:nanoid, "~> 2.1", only: :test},
       {:randomizer, "~> 1.1", only: :test},
       {:secure_random_ex, "~> 0.6", only: :test},
