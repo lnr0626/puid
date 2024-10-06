@@ -370,7 +370,7 @@ defmodule Puid.Test.Timing do
 
     defmodule(HexPuid, do: use(Puid, chars: :hex))
 
-    uuid = fn -> for(_ <- 1..trials, do: UUID.uuid4()) end
+    uuid = fn -> for(_ <- 1..trials, do: Uniq.UUID.uuid4()) end
     puid = fn -> for(_ <- 1..trials, do: HexPuid.generate()) end
 
     IO.puts("")
